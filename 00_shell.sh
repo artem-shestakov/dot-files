@@ -4,7 +4,7 @@ install_zsh () {
     if [ -x "$(command -v apt)" ];
     then
         sudo apt update
-        sudo apt install -y "${packagesNeeded[@]}"
+        sudo apt install -y zsh
     elif [ -x "$(command -v dnf)" ];
     then
         sudo dnf install -y zsh
