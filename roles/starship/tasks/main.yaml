@@ -1,9 +1,0 @@
----
-- name: Download foo.conf
-  ansible.builtin.get_url:
-    url: https://starship.rs/install.sh
-    dest: /tmp/install.sh
-    mode: '0740'
-
-- name: Starship | Install "Starship"
-  ansible.builtin.shell: /tmp/install.sh -y

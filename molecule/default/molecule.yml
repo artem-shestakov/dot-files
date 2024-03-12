@@ -1,8 +1,0 @@
----
-dependency:
-  name: galaxy
-driver:
-  name: docker
-platforms:
-  - name: instance
-    image: ubuntu:22.04
