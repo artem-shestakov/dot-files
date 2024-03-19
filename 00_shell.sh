@@ -21,7 +21,7 @@ install_zsh () {
 echo "Installing Zsh packages"
 install_zsh
 
-Fonts
+# Fonts
 mkdir -p ~/.local/share/fonts
 cp -r NerdFonts ~/.local/share/fonts
 
