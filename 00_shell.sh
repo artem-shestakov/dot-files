@@ -37,7 +37,7 @@ git clone https://github.com/johanhaleby/kubetail.git ~/.oh-my-zsh/custom/plugin
 
 ## Starship
 echo "Installing Starship..."
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh -f | sh
 mkdir -p ~/.config && cp starship.toml ~/.config
 
 ## Run Zsh
