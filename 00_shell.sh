@@ -29,7 +29,7 @@ cp -r NerdFonts ~/.local/share/fonts
 # Setup Zsh
 ## Oh my Zsh
 echo "Installing Oh my Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Plugins
 echo "Installing plugins..."
