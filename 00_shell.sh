@@ -18,25 +18,30 @@ install_zsh () {
 
 # Install packages
 ## Ubuntu
-echo "Installing Zsh packages"
+echo "Installing Zsh packages..."
 install_zsh
 
 # Fonts
+echo "Installing fonts..."
 mkdir -p ~/.local/share/fonts
 cp -r NerdFonts ~/.local/share/fonts
 
 # Setup Zsh
 ## Oh my Zsh
+echo "Installing Oh my Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Plugins
+echo "Installing plugins..."
 git clone https://github.com/johanhaleby/kubetail.git ~/.oh-my-zsh/custom/plugins/kubetail
 
 ## Starship
+echo "Installing Starship..."
 curl -sS https://starship.rs/install.sh | sh
 mkdir -p ~/.config && cp starship.toml ~/.config
 
 ## Run Zsh
+echo "Starting Zsh..."
 cp .zshrc ~/
 zsh
 source ~/.zshrc
